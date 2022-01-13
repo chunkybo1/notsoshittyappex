@@ -1,6 +1,6 @@
 #pragma once
 
-//UPDATED 11/2/2021
+//UPDATED 1/13/2022
 
 #define OFFSET_ENTITYLIST 0x1972ea8 
 #define OFFSET_LOCAL_ENT 0x1d22708  
