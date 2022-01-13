@@ -25,7 +25,7 @@ int main()
 
 		OpenApex();
 
-		std::cout << termcolor::bright_magenta << GetPid(L"r5apex.exe") << std::endl; //When EAC is initally loaded
+		std::cout << termcolor::bright_magenta << "PID: " << GetPid(L"r5apex.exe") << std::endl; //When EAC is initally loaded
 		Sleep(45000); //Allow time for apex to launch
 
 		std::cout << "[?] Searching for process..." << std::endl;

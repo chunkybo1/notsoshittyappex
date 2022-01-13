@@ -26,14 +26,15 @@ namespace Scene {
 			if (pEntity.isPlayer() && pEntity.iHealth() != 0 && pEntity.Entity != pLocal.Entity)
 			{
 				float distance = pEntity.distanceToLocal(pLocal);
+				
 
 				//Glow ESP
 				if (MenuSettings::glowEnabled)
-					Modules::Glow(pEntity);
+					Modules::Glow(pEntity, pLocal);
 
 				//Aimbot
 				if (MenuSettings::aimbotEnabled)
-					if (distance <= 3500)
+					if (distance <= 4000)
 						Modules::Aimbot(pEntity, pLocal, m, &aimCtx, i);
 
 				//Box ESP

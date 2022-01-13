@@ -19,7 +19,7 @@ public:
 
 	DWORD64 Entity;
 	LPCSTR IdentifierC = Identifier.c_str();
-	glowMode glowStyle = { 0, 102, 100, 255 }; //Default Glow is Outline
+	glowMode glowStyle = { 100, 102, 96, 90 }; //Default Glow is Outline
 
 	explicit BaseEntity(int index)
 	{
@@ -82,7 +82,7 @@ public:
 		{
 			float time = 5000.f;
 			glowMode mode = { 0, 0, 0, 0 };
-			colorRGB color = { 255, 0, 0 };
+			colorRGB color = { 0, 0, 0 };
 			Driver.wpm<glowMode>(Entity + GLOW_TYPE, mode);
 			Driver.wpm<colorRGB>(Entity + GLOW_COLOR, color);
 			Driver.wpm<float>(Entity + GLOW_DISTANCE, 40000.f);
