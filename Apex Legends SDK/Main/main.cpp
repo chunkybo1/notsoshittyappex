@@ -19,7 +19,7 @@ int main()
 		system("cls");
 		std::cout << "[-] ApexDriver mapped!" << std::endl;
 
-		//WriteCustomSplashScreen(); //Replace EAC Splash Screen
+		WriteCustomSplashScreen(); //Replace EAC Splash Screen
 
 		Sleep(1000);
 
