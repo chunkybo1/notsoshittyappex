@@ -5,8 +5,6 @@
 #include "../SDK/Overlay/Rendering/Overlay.h"
 #include "Modules/pyScripting/Scripts.h"
 
-//Public Release
-
 void mainThread();
 
 int main()
@@ -19,7 +17,7 @@ int main()
 		system("cls");
 		std::cout << termcolor::bright_green << "[-] ApexDriver mapped!" << std::endl;
 
-		WriteCustomSplashScreen(); //Replace EAC Splash Screen
+		//WriteCustomSplashScreen(); //Replace EAC Splash Screen
 
 		Sleep(1000);
 
@@ -56,7 +54,7 @@ int main()
 			Sleep(5000);
 			return 0;
 		}
-		WriteDefaultSplashScreen(); //Reset EAC Splash Screen
+		//WriteDefaultSplashScreen(); //Reset EAC Splash Screen
 	}
 	
 	//Python UserScripts Thread
