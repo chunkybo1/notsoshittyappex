@@ -17,15 +17,15 @@ int main()
 		//Map Driver
 		system("swind2.exe gdrv.sys ApexDriver.sys");
 		system("cls");
-		std::cout << "[-] ApexDriver mapped!" << std::endl;
+		std::cout << termcolor::bright_green << "[-] ApexDriver mapped!" << std::endl;
 
-		//WriteCustomSplashScreen(); //Replace EAC Splash Screen
+		WriteCustomSplashScreen(); //Replace EAC Splash Screen
 
 		Sleep(1000);
 
 		OpenApex();
 
-		std::cout << GetPid(L"r5apex.exe") << std::endl; //When EAC is initally loaded
+		std::cout << termcolor::bright_magenta << GetPid(L"r5apex.exe") << std::endl; //When EAC is initally loaded
 		Sleep(45000); //Allow time for apex to launch
 
 		std::cout << "[?] Searching for process..." << std::endl;
@@ -41,7 +41,7 @@ int main()
 
 	while (!Globals::modBase)
 		Globals::modBase = Driver.GetModuleBase(Globals::processID, L"r5apex.exe");
-		std::cout << "[-] r5apex.exe found at " << std::hex << Globals::modBase << std::endl;
+		std::cout << termcolor::bright_green << "[-] r5apex.exe found at " << std::hex << Globals::modBase << std::endl;
 
 	if (Globals::processID) {
 		// create window
